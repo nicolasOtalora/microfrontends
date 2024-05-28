@@ -20,6 +20,7 @@ const devConfig = {
       remotes: {
         marketing: 'marketing@http://localhost:8081/remoteEntry.js', // marketing@... matches up with the ModuleFederationPlugin.name property set inside the marketing child config 
         auth: 'auth@http://localhost:8082/remoteEntry.js',
+        dashboard: 'dashboard@http://localhost:8083/remoteEntry.js',
       },
       shared: packageJson.dependencies, // shortcut to tell webpack to share all dependencies
     })
